@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- this is for bean -->
+
+	<bean name="emp1" class="com.springCore.collection.Emp">
+		<property name="name" value="Shibu" />
+
+		<!-- LIST -->
+		<property name="phones">
+			<list>
+				<value>1234567890</value>
+				<value>8208213211</value>
+				<value>8271639576</value>
+			</list>
+		</property>
+
+		<!-- SET -->
+		<property name="address">
+			<set>
+				<value>Mumbai</value>
+				<value>New York</value>
+				<value>London</value>
+			</set>
+		</property>
+
+		<!-- MAP -->
+		<property name="courses">
+			<map>
+				<entry key="Java" value="2months" />
+				<entry key="Python" value="2months" />
+				<entry key="NLP" value="3months" />
+			</map>
+		</property>
+
+		<!-- Properties -->
+		<property name="info">
+			<props>
+				<prop key="name">Shibu Mohapatra</prop>
+				<prop key="subject">DIP</prop>
+			</props>
+		</property>
+
+	</bean>
+</beans>
